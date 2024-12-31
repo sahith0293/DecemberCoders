@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        img {
+            height: 90px;
+            width: 80px;
+            transition: transform 1s ease-in-out;
+        }
+
+        .l {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            color: antiquewhite;
+            border: 20px;
+            border-radius: 30px;
+            position: relative;
+            animation-name: right;
+            animation-duration: 3s;
+            overflow-x: auto; /* Allow horizontal scrolling */
+            white-space: nowrap; /* Prevent wrapping */
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            opacity: 0;
+            animation: scrollAnimation 1s forwards;
+        }
+
+        @keyframes scrollAnimation {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Animation for continuous rotation of images */
+        img:hover {
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .a {
+            display: flex;
+            background-color: antiquewhite;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        h3 {
+            text-decoration: underline red;
+        }
+
+        .d {
+            width: 100px;
+            height: 80px;
+        }
+
+        footer {
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="a">
+        <h1>10000 Coders</h1>
+        <img class="d" src="1000  coders.png" alt="">
+    </div>
+    
+    <h2>Available Technologies</h2>
+    <hr>
+
+    <div>
+        <h3>FrontEnd Technologies</h3>
+        <h4>Languages and Preprocessors:</h4>
+
+        <div class="l">
+            <a href="https://en.wikipedia.org/wiki/HTML"><img src="html.png" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/CSS"><img src="css.png" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"><img src="Bootstrap.png" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="javascript.png" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/TypeScript"><img src="TypeScript.png" alt=""></a>
+        </div>
+
+        <h4>Frameworks and Libraries</h4>
+        <div class="l">
+            <a href="https://en.wikipedia.org/wiki/JQuery"><img src="Jquery.png" alt=""></a>
+            <a href="https://en.wikipedia.org/wiki/Vue.js"><img src="vuejs.png" alt=""></a>
+            <a href="https://svelte.dev/"><img src="svelte.png" alt=""></a>
+            <a href="https://tailwindcss.com/"><img src="tailwind.jpg" alt=""></a>
+            <a href="https://backbonejs.org/"><img src="backbone.png" alt=""></a>
+        </div>
+    </div>
+    
+    <hr>
+    <h3>Backend Technologies</h3>
+    <div class="l">
+        <a href="https://en.wikipedia.org/wiki/PHP"><img src="php.png" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/Laravel"><img src="laravel.png" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/Django_(web_framework)"><img src="django.png" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img src="python.jpg" alt=""></a>
+        <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)"><img src="flask.png" alt=""></a>
+    </div>
+
+    <hr>
+    <h3>Mern Stack</h3>
+    <div class="l">
+        <a href="Mongo.png" download><img src="Mongo.png" alt=""></a>
+        <a href="express.png" download><img src="express.png" alt=""></a>
+        <a href="react.png" download><img src="react.png" alt=""></a>
+        <a href="node.png" download><img src="node.png" alt=""></a>
+    </div>
+
+    <hr>
+    <h3>Mean Stack</h3>
+    <div class="l">
+        <a href="Mongo.png" download><img src="Mongo.png" alt=""></a>
+        <a href="express.png" download><img src="express.png" alt=""></a>
+        <a href="angular.png" download><img src="angular.png" alt=""></a>
+        <a href="node.png" download><img src="node.png" alt=""></a>
+    </div>
+    
+    <br>
+    <br>
+    <footer>
+        <h4>Please contact us:</h4>
+        <a href="tel:+91 6305693431" style="padding-top: 20px;"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:sahithpinku37784@gmail.com" style="padding-top: 20px;"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/9390986286? text=Welcome to 10k Coders" style="padding-top: 20px;"><i class="fa-brands fa-whatsapp"></i></a>
+    </footer>
+
+</body>
+</html>

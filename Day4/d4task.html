@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>task 4</title>
+    <style>
+        table,th,td{
+            border: 1px solid;
+            border-collapse: collapse;
+            
+            border-color: rgb(9, 6, 2);
+            padding: 10px;
+            
+        }
+        span{
+            padding :5px;
+            background-color: rgb(161, 161, 169);
+            margin:2px;
+            border-radius:2px;
+        }
+        .up{
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+            justify-content: space-evenly;
+        }
+        h1,h2{
+            text-align: center;
+            text-decoration: underline;
+            
+            
+        }
+        .a{
+            color: rgb(255, 0, 0);
+        }
+        ul{
+            list-style-type: disc;
+        }
+        ol{
+            line-height: 2;
+            padding-left: 40px;
+            list-style-position: outside;
+        }
+        p{
+            line-height: 1.8;
+        }
+        .keyboard-shortcuts{
+            display: grid;
+            
+            
+        }
+        .i{
+            display: flex;
+            flex-direction: row;
+        }
+            
+        
+    </style>
+</head>
+<body>
+
+    <h1>Task 4</h1>
+    <h2>Visual Studio Code</h2>
+    <h3>Introduction to Visual Studio Code (VS Code)</h3>
+    <div class =i>
+        <div><p><b>Visual Studio Code (VS Code)</b>is a free, open-source code editor developed by <b class="a">Microsoft</b>. Released in 2015, it has become one of the most popular tools for developers due to its versatility, extensibility, and ease of use. It supports multiple programming languages, offers a wide range of features, and runs on all major operating systems, including <b class="a">Windows</b>, <b class="a">macos</b>, and <b class="a">Linux</b>.</p></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/192px-Visual_Studio_Code_1.35_icon.svg.png" alt="">
+
+
+    </div>
+    </p><br>
+
+    <hr>
+
+    <h3>Key Features</h3>
+    <ol>
+        <li>
+            <b>Lightweight and Fast</b>
+            <ul>
+                <li>
+                    Optimized for speed and efficiency while maintaining powerful editing capabilities.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>Built-in Debugging</b>
+            <ul>
+                <li>Debug code directly within the editor with breakpoints, call stacks, and an interactive console.</li>
+            </ul>
+        </li>
+        <li>
+            <b>Extensive Language Support</b>
+            <ul>
+                <li>Supports multiple programming languages like Python, JavaScript, Java, C++, HTML, CSS, and more, with syntax highlighting and IntelliSense.</li>
+            </ul>
+        </li>
+        <li>
+            <b>Customizable with Extensions</b>
+            <ul>
+                <li>Thousands of extensions are available in the VS Code Marketplace to add functionality (e.g., themes, linters, debuggers, etc.).
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b>Git Integration</b>
+            <ul>
+                <li>Built-in Git commands allow developers to manage repositories, stage changes, and commit directly from the editor.</li>
+            </ul>
+        </li>
+        <li>
+            <b>Cross-Platform</b>
+            <ul>
+                <li>Works seamlessly across Windows, macOS, and Linux.</li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+
+
+    <h2 style = "text-align: center;">List of Emmets and Description</h2>
+        <table style="text-align: center;margin-left:auto;margin-right:auto">
+            <th>Symbols</th>
+            <th>Description</th>
+            <tr>
+                <th>!</th>
+                <td>gives the basic html5 template</td>
+            </tr>
+            <tr>
+                <th>></th>
+                <td>Creates a child element.</td>
+            </tr>
+            <tr>
+                <th>+</th>
+                <td>Creates a sibling element.</td>
+            </tr>
+            <tr>
+                <th>^</th>
+                <td>Moves up one level to create a sibling element</td>
+            </tr>
+            <tr>
+                <th>*</th>
+                <td>Creates multiple elements.</td>
+            </tr>
+            <tr>
+                <th>{}</th>
+                <td>Adds text content inside an element.</td>
+            </tr>
+            <tr>
+                <th>[]</th>
+                <td>Adds attributes to an element.</td>
+            </tr>
+            <tr>
+                <th>()</th>
+                <td>Groups elements for nested structures.</td>
+            </tr>
+            <tr>
+                <th>#</th>
+                <td>Adds an ID to an element</td>
+            </tr>
+            <tr>
+                <th>.</th>
+                <td>Adds a class to an element</td>
+            </tr>
+        </table>
+        <br><br>
+        <hr>
+        <h2> keyboard-shortcuts</h2>
+
+
+        <div class="keyboard-shortcuts">
+            <div class="up">
+                <table>
+                    <th colspan =2>Specific Emmet Actions</th>
+                    <tr>
+                        <th>Shortcut</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><span>Tab</span></td>
+                        <td>Expands an Emmet abbreviation.</td>
+                    </tr>
+                    <tr>
+                        <td><span>ctrl</span> + <span>space</span></td>
+                        <td>Triggers suggestions/auto-complete.</td>
+                    </tr> 
+                </table>
+                <br>
+                <table>
+                    <th colspan =2>Code Navigation and Editing</th>
+                    <tr>
+                        <th>Shortcut</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><span>Ctrl</span>+<span>D</span></td>
+                        <td>Selects the next occurrence of the word.</td>
+                    </tr>
+                    <tr>
+                        <td><span>Alt</span> + <span>up</span>/<span>Down</span></td>
+                        <td>Triggers suggestions/auto-complete.</td>
+                    </tr> 
+                    <tr>
+                        <td><span>Shift</span>+<span>Alt</span>+<span>Down</span></td>
+                        <td>Duplicates the current line.</td>
+                    </tr> 
+                    <tr>
+                        <td><span>Ctrl</span>+<span>Shift</span>+<span>k</span></td>
+                        <td>Deletes the current line.</td>
+                    </tr>       
+                </table>
+                <table>
+                    <th colspan =2>File and Workspace</th>
+                    <tr>
+                        <th>Shortcut</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><span>Ctrl</span>+<span>N</span></td>
+                        <td>Creates a new file.</td>
+                    </tr>
+                    <tr>
+                        <td><span>Ctrl</span> + <span>S</span></td>
+                        <td>Saves the current file.</td>
+                    </tr> 
+                    <tr>
+                        <td><span>Ctrl</span>+<span>Shift</span>+<span>T</span></td>
+                        <td>Reopens the last closed file</td>
+                    </tr> 
+                </table>
+                
+    
+            </div>
+            <div>
+                <table style="margin-left: 54px;margin-top:30px">
+                    <th colspan =2>Multi-cursor Editing</th>
+                    <tr>
+                        <th>Shortcut</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td><span>Alt</span>+<span>Click</span></td>
+                        <td>Adds a new cursor at the clicked position.</td>
+                    </tr>
+                    <tr>
+                        <td><span>Ctrl</span> + <span>Alt</span>+<span>Arrow</span></td>
+                        <td>Adds a cursor above or below the current line.</td>
+                    </tr> 
+                </table>
+                
+    
+            </div>
+            
+
+        </div>
+
+
+    
+</body>
+</html>
