@@ -1,0 +1,1150 @@
+.header{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(240, 235, 235);
+    align-items: center;
+}
+
+.icons{
+    margin-left: 35%;
+    font-size: 2em;
+    display: flex;
+    gap: 10px;
+}
+.xmark{
+    padding-left: 40%;
+    font-size: 25px;
+    color:#808080
+}
+
+.navbar h1{
+    color: #c0c0c0;
+    padding-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-style: inherit;
+    padding-top: 30px;
+    
+}
+.navbar i{
+    padding-right: 10%;
+    font-size: 25px;
+    padding-top: 30px;;
+}
+
+.navbar{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+   width: 100%;
+   height: 12vh;
+   margin-top: 5%;
+}
+.sec1{
+    display: flex;
+    background-color: rgb(253, 246, 246);
+    
+    
+
+}
+.ig1{
+    width:50%;
+
+}
+.s2{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.s2 p{
+    width:34vw;
+    line-height: 30px;
+    font-size: 20px;
+}
+.s2 h1{
+    color: black;
+    font-style: italic;
+    font-size: 55px;
+    
+   
+
+}
+.s2 span{
+    color:#ffff00
+
+}
+.b1{
+    height: 50px;
+    width:200px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.ig1{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+.sec1 .s2{
+    position: relative;
+    animation-name: right;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes example {
+    from{
+        opacity: -1;left:-400px
+    } to{left:0px}
+}
+@keyframes examplee {
+    from{
+        opacity: -1;bottom:-100px
+    } to{top:0px}
+}
+@keyframes bottom {
+    from {
+        bottom: -450px;
+    }
+    to {
+        top: 0px;
+    }
+   
+}
+@keyframes right {
+    from{
+        right:-300px
+    } to{
+        left:0px;
+    }
+       
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Initial rotation angle */
+  }
+  to {
+    transform: rotate(360deg); /* Final rotation angle */
+  }
+}
+.s2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec2{
+    background-color: #dfc327;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    height:40vh;
+    
+}
+.sec2:hover .k{
+    position: relative;
+    animation-name: bottom;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+
+}
+.b1:hover{
+    background-color: #000000;
+    color: white;
+}
+.sec-3:hover .ig1{
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+}
+.sec-3:hover .s3{
+    position:relative;
+    animation-name: right;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-timing-function:linear;
+}
+.sec-4:hover .s4{
+    position:relative;
+    animation-name: bottom;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+}
+.sec-4 img{
+     animation: rotate 2s infinite linear;
+}
+.sec-5:hover .s5{
+    position:relative;
+    animation-name: right;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+   
+}
+.sec-5:hover .s6{
+    position:relative;
+    animation-name: examplee;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+}
+.s6:hover img {
+    animation: right 2s 1s linear;
+}
+.sec-5:hover .s6{
+    position:relative;
+    animation-name: example;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: ease-in-out;
+}
+.b6:hover{
+    background-color: black;
+    color:white;
+}
+.sec-6:hover .s7{
+    position:relative;
+    animation-name: example;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+}
+.sec-7:hover .s9{
+    position:relative;
+    animation-name: right;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-timing-function:linear;
+}
+.sec-6:hover .s8{
+    position:relative;
+    animation-name: examplee;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+}
+.sec-7:hover .s10{
+    position:relative;
+    animation-name: right;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+}
+
+.sec2 div{
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 15px;
+    text-align: center;
+    padding:20px;
+    width:18vw;
+    height:30vh;
+    font-size: 30px;
+
+}
+
+.sec2 img{
+    height:60px;
+    background-color: #dfc327;
+    padding:20px;
+    border: 0px solid white;
+    border-radius: 50%;
+    width:5vw;
+    margin-top: 20px;
+}
+.sec-3{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(253, 246, 246);
+   
+}
+.s3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+
+}
+.s3 ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  
+  
+
+}
+.s3 ul li::before{
+    content:"✔️";
+    
+}
+.b5{
+    width:220px;
+    height:50px;
+    border-radius: 20px;
+    color: silver;
+    font-size: 15px;
+
+
+}
+
+.sec-4{
+    display:flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    height:80vh;
+   
+}
+.s4{
+    width:15vw;
+    height:60vh;
+    background-color: white;
+    border-radius: 20px;
+    margin-top:70px;
+    text-align: center;
+    padding-top:30px;
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+.s4 img{
+    width:8vw;
+    border-radius: 50%;
+    border:6px solid yellow
+
+}
+.sec-5{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(253, 246, 246);
+}
+
+.s5 img{
+    width:60vw;
+}
+.s6{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    line-height: 30px;
+    padding:30px;
+    justify-content: space-evenly;
+    
+
+
+}
+.s6 img{
+    width:4vw;
+}
+.sec-6{
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    
+}
+
+.s7{
+    width:55%;
+    padding:100px;
+}
+
+.ig2{
+    width:20vw;   
+}
+.s8{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding: 40px;
+    width:80vw;
+    line-height:50px;
+    
+    
+}
+.s8 img{
+    width:10vw;
+}
+.s8 button{
+    width:140px;
+    height:40px;
+    border-radius: 20px;
+    color:#9acd32;
+
+}
+.sec-7{
+    display: flex;
+   
+    background-color: rgb(253, 246, 246);
+    
+
+    
+}
+.sec-7 img{
+    width:67%;
+    
+    
+}
+
+.s9{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    line-height: 30px;
+    width: 40%;
+    font-size: 20px;
+   
+}
+.s9 span{
+    font-weight: bold;
+    font-size: 30px;
+
+
+}
+.sec-8{
+    display: flex;
+    justify-content: space-around;
+    background-color: yellowgreen;
+    height:80vh;
+}
+.s11{
+    height:60vh;
+    width:20vw;
+    font-size: 20px;
+    
+    border-radius:15px;
+    margin-top:80px;
+    text-align: center;
+    
+}
+.s12{
+
+    height:30vh;
+    width:20vw;
+    font-size: 20px;
+    margin-top: 70px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    
+}
+.s12 p{
+    line-height: 30px;
+}
+
+.s13{
+    height:30vh;
+    width:20vw;
+    font-size: 20px;
+    margin-top: 250px;
+    border-radius:15px;
+    background-color: black;
+    text-align: center;
+    color:white;
+
+}
+.sec-10{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    height:100vh;
+    width:100%;
+    justify-content: space-evenly;
+}
+.s17{
+   width:30%;
+   height:80%;
+   font-size:25px;
+   
+
+}
+.s14{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    height:90vh;
+    width:40%;
+    font-size: 25px;
+    padding-left: 20px;
+    border-radius: 20px;
+    
+}
+
+.s16{
+ width: 100%;
+ height: 80%;   
+}
+.s16 form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 20px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-left: 5%;
+    width: 90%;
+
+}
+.s15{
+    border:none;
+    border-bottom: 1px solid black;
+    width:80%;
+    padding:10px;
+
+}
+.s18{
+    border-bottom: 1px solid black;
+    padding-bottom:25px;
+}
+.sec-9{
+    display: flex;
+    width:100%;
+    height:100vh;
+    
+    justify-content: space-around;
+}
+.sec-9 img{
+    width:40vw;
+    height:70vh;
+    background-color: white;
+    margin-top: 30px;
+}
+.b6{
+    width:220px;
+    height:40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+
+}
+.s19{
+    width:30vw;
+    font-size: 25px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.s19 h1{
+    border-bottom: 1px solid black;
+    padding:20px;
+}
+.s20{
+    line-height: 30px;
+
+}
+.s16 button{
+    width:80%;
+    height:50px;
+    background-color: #000000;
+    color:white;
+    border-radius: 30px;
+}
+footer{
+    display: block;
+    background-color: #808080;
+    text-align: center;
+    height:30vh;
+    padding: 50px;
+}
+footer span{
+   
+    text-decoration: underline;
+
+}
+footer p{
+    padding-top: 50px;
+}
+@media screen and (max-width:500px) {
+    
+    .navbar{
+        height:20vh;
+        
+    }
+    
+    
+    
+    .sec1{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:120vh;
+        
+    }
+    .s2{
+        width:100vw;
+        margin-right: 10%;
+    }
+    .s2 p{
+        width:80vw;
+    }
+   
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap:20px;
+        height:170vh;
+        
+    }
+
+    .sec2 div{
+        width:70vw;
+    }
+    .sec-3{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        justify-content: center;
+        
+    }
+    .s3{
+        width:80vw;
+        font-size: 15px;
+    }
+    .s3 h1{
+        padding-left: 5%;
+        
+    }
+    .s3 ul{
+        padding-left: -5%;
+    }
+    .b5{
+        width:180px;
+        height:50px;
+        border-radius: 25px;
+        margin: 20px;
+    }
+    
+    .sec-4{
+        display: flex;
+        flex-direction: column;
+        height:350vh;
+        align-items: center;
+    }
+    
+
+    .s4{
+        width:70vw;
+        height:50vh;
+
+    }
+    .s4 img{
+        width:25vw;
+    }
+       
+    
+    .sec-5{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 120vh;
+
+    }
+    .s5{
+        margin-left: 60px;
+        
+    }
+    .s5 img{
+       
+        width:80vw;
+        height: 50vh;
+
+    }
+    .s6 img{
+        width: 20vw;;
+    }
+    .sec-6{
+        display: flex;
+        flex-direction: column;
+        height: 220vh;
+
+    }
+    /*.s7{
+        margin-left: -30px;
+    /* } */
+    .ig2{
+        width:60vw;
+        
+    }
+    .sec-6 button{
+        width:100px;
+        height:40px;
+        border-radius:15px;
+        
+    }
+    .s8{
+        margin-bottom:100px ;
+    }
+    .s8 p{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        font-size: 20px;
+        width:70vw;
+    }
+    .s8 img{
+        width:150px;
+    }
+    .sec-7{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .s9{
+        width:60vw;
+        margin-top: 20px;
+    }
+    .s10{
+        margin-left: 30px;
+    }
+    .sec-8{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height:140vh;
+        gap:5px;
+    }
+    .s12{
+        width:80%;
+    }
+    .s13{
+        width:80%;
+        position:relative;
+        bottom:120px;
+        
+        
+    }
+    .s11{
+        width:80%;
+    }
+    .sec-9{
+        display: flex;
+        flex-direction: column;
+        height:220vh;
+        align-items:center;
+
+    }
+    .ig3 img{
+        width:60vw;
+    }
+    .s19{
+        width:60vw;
+        margin-bottom: 30px;
+        margin-right:20px;
+    }
+    .s20{
+        width:70vw;
+        font-style: italic;
+    }
+
+    .sec-10{
+        display: flex;
+        flex-direction: column;
+        height:250vh;
+    }
+    .s14{
+        height:140vh;
+        width:70vw;
+        margin-bottom: 30px;
+
+
+    }
+    .s17{
+        width:60vw;
+        margin-top: 30px;
+    }
+    .s18{
+        width:60vw;
+    }
+    
+        
+}
+@media (min-width:769px) and (max-width:1022px) { 
+    .sec-1{
+        width:100vw;
+    }
+        
+    
+    .ig1{
+        width:40vw;
+        height:50vh;
+        margin:100px;
+
+    }
+    .s2{
+        display: flex;
+        align-items: center;
+    }
+    
+ .sec2{
+    display: grid;
+    grid-template: auto auto /auto auto;
+    height:80vh;
+   
+    gap:20px;
+    }   
+    .sec2 div{
+        
+        width:40vw;
+    }
+ 
+ .b1{
+    margin-left:30px;
+ }
+ 
+ 
+ 
+ .sec-3{
+    display: flex;
+    flex-direction: column;
+    height:150vh;
+    
+    align-items: left;
+
+ }
+ .sec-3 img{
+    width:60vw;
+ }
+.s3{
+    margin-left: 30px;
+}
+ 
+ 
+ .sec-4{
+    height:150vh;
+    display: grid;
+    grid-template: auto auto/auto auto auto; 
+    
+    align-items: center;
+    padding: 4%;
+    
+
+ }
+ .s4{
+    width:80%;
+    height:80%;
+    
+ }
+ .s4 img{
+    width:12vw;
+ }
+ .sec-5{
+    display: flex;
+    flex-direction: column-reverse;
+    height:120vh;
+ }
+ .s6 img{
+    width:10vw;
+ }
+ .s5 img{
+    width:55vw;
+ }
+ .s6 p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+
+ }
+ 
+ .sec-6{
+    display: flex;
+    flex-direction: column;
+    height:250vh;
+ }
+ .s7 img{
+    width:40vw;
+ }
+ .s8 img{
+    width:20vw;
+ }
+ .s8 button{
+    width:130px;
+    height:40px;
+    border-radius: 20px;
+ }
+ .s8 p{
+    width:90%;
+ }
+ .s5 img{
+    margin-left:40%;
+ }
+ .sec-7{
+    display: flex;
+    align-items: center;
+    padding: 70px;
+ }
+ .s10{
+    margin-left: 40px;
+ }
+ .s9{
+    width:60vw;
+    margin-bottom: 30px;
+ }
+ .s9 p{
+    font-size: 20px;
+    line-height: 35px;
+ }
+ .sec-8{
+    display: grid;
+    grid-template:30% 50%/50% 50%;
+    height:150vh;
+    
+    
+    
+ }
+ 
+ .s11{
+    width:60%;
+    height:60%;
+    margin: 10%;
+ }
+ .s12{
+    width:80%;
+    height:60%;
+ }
+ .s13{
+    width:150%;
+    height:40%;
+    margin-left: 20%;
+   
+    
+    
+ }
+ .sec-9{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    
+ }
+ .ig3 img{
+    margin-left: 20px;
+ }
+ .s19{
+    margin-bottom:30px;
+    margin-left: 40px;
+ }
+ .s19 div{
+    width:60vw;
+ }
+ .s20{
+    font-style: italic;
+    line-height: 30px;
+ }
+ .sec-10{
+    height:130vh;
+ }
+}
+        
+
+@media (min-width: 501px) and (max-width: 768px){
+    .header{
+        width:60vw;
+        
+    }
+    .sec1{
+        display: flex;
+        flex-direction: column;
+        height:140vh;
+        align-items: center;
+    }
+    .s2 h1{
+        width:80vw;
+       text-align: center;
+    }
+    .s2 p{
+        width:80vw;
+    }
+    .s2{
+        width:20vw;
+        margin-top:20px;;
+    }
+    .sec2{
+        display: grid;
+        grid-template:auto auto/auto auto;
+        height:100vh;
+        gap:10px;
+    }
+    .sec2 div{
+        width:35vw;
+        
+    }
+    .sec-3{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+    }
+    .s3{
+        margin-left: 20px;
+    }
+   
+
+    .b1{
+        text-align: center;
+        margin-right:-40%;
+        margin-top: 6%;
+
+    }
+    .sec-4{
+        height:180vh;
+        display: grid;
+        grid-template: auto auto auto/auto auto;
+        height:250vh;
+    }
+    .s4{
+        width:40vw;
+        
+    }
+    .sec-5{
+        height:120vh;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .s6 img{
+        width:20vw;
+       
+    }
+    .ig2{
+        height:70vh;
+        width:40vw;
+        margin-right: 20%;
+    }
+    .b1{
+        text-align: center;
+    }
+    .s5{
+        margin-right: 10%;
+        margin-left: 340px;;
+        
+    }
+    .sec-6{
+        height:220vh;
+        display:flex;
+        flex-direction: column;
+    }
+    .s8 img{
+        width:30vw;
+
+    }
+    .sec-7{
+        height:170vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        align-items: center;
+    }
+    .s9{
+        font-size: 25px;
+        width:70vw;
+        line-height: 2;
+        margin-top: 15%;
+        margin-right:200px;
+
+
+    }
+    .s9 span{
+        font-size: 40px;
+        text-align: center;
+        margin-left: 100px;
+    }
+    .s9 p{
+        text-align: center;
+        margin-left: 140px;
+        font-size: 20px;
+        width: 50vw;
+    }
+    .s10 img{
+        width:38vw;
+        margin-right:230px;
+    }
+    .s10{
+        margin-bottom: 15%;
+        margin-left:30%;
+        
+    }
+    .sec-8{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height:150vh;
+    }
+    .s13{
+        width:65vw;
+        align-items: center;
+        margin-left: 40%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        height:50vh;
+
+
+    }
+    .s12{
+        margin-top: -10%;
+        width:80vw;
+    }
+    .s11{
+        width:80vw;
+    }
+    .s13{
+        width:80vw;
+        margin:40px;
+        height:30vh;
+    }
+    .sec-9{
+        height:200vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 15%;
+        width:80vw;
+    }
+    .s19{
+        width: 60vw;
+    }
+    .s20{
+        width:80w;
+        font-style: italic;
+        line-height: 30px;;
+    }
+    .sec-10{
+        height:210vh;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .s14{
+        margin-bottom: 10%;
+        padding-bottom: 5%;
+    }
+    .s17{
+        width:58vw;
+    }
+    .s14{
+        width:68vw;
+    }
+    
+}
