@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .form label {
+            padding-top: 30px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        form {
+            width: 400px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        legend {
+            font-size: 1.5rem;
+            color: #2575fc;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background: #1e5bb5;
+        }
+
+        .file-upload {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <div class="form">
+                <label for="Fname">First Name:</label>
+                <input type="text" placeholder="Enter your first name" id="Fname">
+                <label for="Lname">Last Name:</label>
+                <input type="text" placeholder="Enter your last name" id="Lname">
+                <label for="number">Mobile Number:</label>
+                <input type="number" placeholder="Enter your mobile number" id="number">
+                <div>
+                    <label for="">Gender:</label>
+                    <input type="radio" name="Gender" id="male">
+                    <label for="male" name="Gender">Male</label>
+                    <input type="radio" name="Gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+                <label for="address">Address:</label>
+                <textarea name="address" id="address" rows="8" cols="30" placeholder="Enter your address"></textarea>
+                <label for="Courses">Courses:</label>
+                <select name="course" id="Courses">
+                    <option value="v1">Full stack</option>
+                    <option value="v2">Salesforce Developer</option>
+                    <option value="v3">DevOps</option>
+                </select>
+                <label for="cours">Select Courses</label>
+                <div>
+                    <label for="c">Java Full Stack</label>
+                    <input type="checkbox" id="c">
+                    <label for="c1">Python Full Stack</label>
+                    <input type="checkbox" id="c1">
+                    <label for="c2">Azure DevOps</label>
+                    <input type="checkbox" id="c2">
+                    <label for="c3">Salesforce Development</label>
+                    <input type="checkbox" id="c3">
+                    <label for="c4">AWS</label>
+                    <input type="checkbox" id="c4">
+                </div>
+                
+                
+                <div class="file-upload">
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
+                </div>
+                <div class="file-upload">
+                    <label for="photo">Upload Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+
+                
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
