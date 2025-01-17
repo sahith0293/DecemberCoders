@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .link-item {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .link-item:hover {
+            transform: translateY(-5px);
+            background-color: #f1f1f1;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .link-item a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Task Links</h1>
+    <div class="links-container">
+        <div class="link-item"><a href="../Day1/d1task.html">Task 1</a></div>
+        <div class="link-item"><a href="../Day3/d3task.html">Task 2</a></div>
+        <div class="link-item"><a href="../Day4/d4task.html">Task 3</a></div>
+        <div class="link-item"><a href="../Day5/Day5task/d5task.html">Task 4</a></div>
+        <div class="link-item"><a href="../Day6/task.html">Task 5</a></div>
+        <div class="link-item"><a href="../Day7/d7task1.html">Task 6</a></div>
+        <div class="link-item"><a href="../Day7/Day7Task2/home.html">Task 7</a></div>
+        <div class="link-item"><a href="../Day8/index.html">Task 8</a></div>
+        <div class="link-item"><a href="../Day9/d9task.html">Task 9</a></div>
+        <div class="link-item"><a href="../Day10/task.html">Task 10</a></div>
+        <div class="link-item"><a href="../Day11/day11Task/index.html">Task 11</a></div>
+    </div>
+
+</body>
+</html>

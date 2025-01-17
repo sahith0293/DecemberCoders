@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahith Solutions - Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        form {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px 30px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 1em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input::placeholder {
+            font-style: italic;
+            color: #aaa;
+        }
+
+        datalist option {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Signup</h1>
+        <form action="index.html" >
+            <fieldset>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                    placeholder="Create a strong password" 
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+                    title="Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character." 
+                    required>
+
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="in">India</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                    <option value="ca">Canada</option>
+                </select>
+
+                <label for="role">Choose your role:</label>
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <optgroup label="Development">
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="fullstack">Fullstack Developer</option>
+                    </optgroup>
+                    <optgroup label="Salesforce">
+                        <option value="admin">Salesforce Admin</option>
+                        <option value="developer">Salesforce Developer</option>
+                    </optgroup>
+                </select>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" list="skills-list" placeholder="Select or type your skills" required>
+                <datalist id="skills-list">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="Python">
+                    <option value="Salesforce">
+                </datalist>
+
+                <input type="submit">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
