@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .container {
+            width: 25vw;
+            height: 70vh;
+            margin: auto;
+            border: 10px solid black;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: green;
+            padding: 5px 10px;
+            color: white;
+        }
+
+        .navbar nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar img {
+            width: 40px;
+            height: 50px;
+            border-radius: 100%;
+        }
+
+        .navbar i {
+            cursor: pointer;
+        }
+
+        .navbar i:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .s1 {
+            flex-grow: 1;
+            padding: 10px;
+            background-color: #f0f0f0;
+            overflow-y: auto;
+            scrollbar-width: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .date {
+            text-align: center;
+            background-color: lightseagreen;
+            color: white;
+            padding: 4px 10px;
+            width: fit-content;
+            margin: 10px auto;
+            border-radius: 10px;
+            font-size: 14px;
+            position:sticky;
+            top:0px;
+        }
+
+        .message-container {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .left-container {
+            justify-content: flex-start;
+            flex-direction: column; 
+            align-items: flex-start;
+            display: flex;
+            gap: 5px;
+        }
+
+        .right-container {
+            justify-content: flex-end;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .message {
+            max-width: 70%;
+            padding: 8px 12px;
+            border-radius: 10px;
+            word-wrap: break-word;
+        }
+
+        .left {
+            background-color: #d1ecf1; 
+            color: #056162;
+            border-radius: 10px 10px 10px 0;
+            text-align: left;
+            display: block;
+        }
+
+        .right {
+            background-color: #d4edda; 
+            color: #155724;
+            border-radius: 10px 10px 0 10px;
+            text-align: right;
+        }
+
+       
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer input {
+            width: 80%;
+            padding: 8px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .footer .icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer i {
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .footer i:hover {
+            
+            border-radius: 50%;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <i class="fa-solid fa-arrow-left"></i>
+                <img src="MarcBenoiff.jpg" alt="Profile Picture">
+                <span>Marc Benoiff</span>
+            </nav>
+            <nav>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </nav>
+        </div>
+
+        <div class="s1">
+            <div class="date">24 Jan</div>
+            <div class="message-container left-container">
+                <div class="message left">Hii Sahith</div>
+            </div>
+            <div class="message-container left-container">
+                <div class="message left">How are you?</div>
+            </div>
+            <div class="message-container right-container">
+                <div class="message right">I'm fine, sir</div>
+            </div>
+            <div class="message-container right-container">
+                <div class="message right">I will be the next CEO</div>
+            </div>
+
+            <div class="date">25 Jan</div>
+            <div class="message-container left-container">
+                <div class="message left">Good morning</div>
+            </div>
+            <div class="message-container right-container">
+                <div class="message right">Good morning, sir</div>
+            </div>
+
+            <div class="date">26 Jan</div>
+            <div class="message-container left-container">
+                <div class="message left">What are you working on?</div>
+            </div>
+            <div class="message-container right-container">
+                <div class="message right">I'm learning new things</div>
+            </div>
+
+            <div class="date">27 Jan</div>
+            <div class="message-container left-container">
+                <div class="message left">Keep up the good work!</div>
+            </div>
+            <div class="message-container right-container">
+                <div class="message right">Thank you!</div>
+            </div>
+            <div class="message-container left-container">
+                <div class="message left">We are dealing with neural networks of Einstein 4.15</div>
+                <div class="message left">We are dealing with neural networks of Einstein 4.15</div>
+            </div>
+            <div class="message-container right-container">
+                <div class="message right"> I have an idea we can clone the LLM model we are already using Gen AI for Einstein GPT</div>
+            </div>
+        </div>
+
+       
+        <div class="footer">
+            <input type="text" placeholder="Type a message...">
+            <div class="icons">
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa-solid fa-face-smile"></i>
+                <i class="fa-solid fa-file-upload"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
