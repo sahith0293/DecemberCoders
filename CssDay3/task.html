@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet au Catering</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            position: sticky;
+            top: 0;
+        }
+        
+        .navbar nav {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .sec1 {
+            background-image: url(hamburger.jpg);
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-size: cover;
+            padding: 50px;
+        }
+        
+        .sec2, .sec3 {
+            display: flex;
+            width: 100%;
+            padding: 40px;
+            align-items: center;
+        }
+        
+        .sec2 img, .sec3 img {
+            width: 45%;
+            margin: 20px;
+        }
+        
+        .cont1, .cont2 {
+            width: 50%;
+            padding: 20px;
+        }
+        
+        .cont1 h3, .cont2 h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .cont1 p, .cont2 p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        .sec4 {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .sec4 img {
+            width: 30%;
+            height: 250px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gourmet au Catering</h1>
+        <div class="navbar">
+            <a href="#s2"><nav>About</nav></a>
+            <a href="#s3"><nav>Menu</nav></a>
+        </div>
+    </header>
+    
+    <div class="sec1"></div>
+    
+    <hr>
+    
+    <div class="sec2" id = "s2">
+        <img src="tablesetting2.jpg" alt="Table Setting">
+        <div class="cont1">
+            <h3 style="text-align: center;">About Catering</h3>
+            <p style="text-align:center;"> <b>Tradition since 1889</b></p>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            <p style="color:rgb(141, 141, 15)">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                
+        </div>
+    </div>
+    
+    <div class="sec3" id = "s3">
+        <div class="cont2">
+            <h1>Our Menu</h1>
+            <h3>Bread Basket</h3>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            <h3>Honey Almond Granola with Fruits</h3>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            <h3>Belgian Waffle</h3>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+            <h3>Scrambled eggs</h3>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            <h3>Blueberry Pancakes</h3>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <img src="tablesetting.jpg" alt="Table Setting">
+    </div>
+    
+    <div class="sec4">
+        <img src="hamburger.jpg" alt="Hamburger">
+        <img src="tablesetting.jpg" alt="Table Setting">
+        <img src="tablesetting2.jpg" alt="Table Setting">
+    </div>
+</body>
+</html>

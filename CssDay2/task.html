@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .margin {
+            border: 2px dashed black;
+            width: 50%;
+            height: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .border {
+            border: 2px solid black;
+            width: 80%;
+            height: 80%;
+            padding: 5%;
+            margin: auto;
+        }
+
+        .padding {
+            border: 2px dotted black;
+            width: 80%;
+            padding: 5%;
+            margin: auto;
+        }
+
+        .content {
+            border: 1px solid black;
+            width: 80%;
+            height: 50%;
+            padding: 5%;
+            margin: auto;
+        }
+
+        .margin:hover {
+            background-color: lightgray;
+        }
+
+        .border:hover {
+            background-color: lightblue;
+        }
+
+        .padding:hover {
+            background-color: lightgreen;
+        }
+
+        .content:hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="margin">
+        - Margin -
+        <div class="border">
+            - Border -
+            <div class="padding">
+                - Padding -
+                <div class="content">
+                    - Content -
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
