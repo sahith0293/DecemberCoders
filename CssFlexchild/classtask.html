@@ -5,44 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .main-Container{
-            display:flex;
-            padding:30px 25px;
-            gap:20px;
-            justify-content: center;
-            
-
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
         }
-        img{
-          
+
+        .main-page {
+            background-image: url("hamburger.jpg"); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin-bottom: 20px;
+        }
+        .main-page h2{
+            position: absolute;
+            bottom:0px;
+            left:10px;
+            
+            font-weight: bold;
+            color: silver;
+            font-size: 2em;
+            
+            
+            
+            
+        }
+           
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 5px;
+            margin: 10px 10px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            position: sticky;
+            top:0px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            margin-right: 30px;
+        }
+
+        
+        
+         
+        .container1 {
+            display: flex;
+            gap: -10px;
+        }
+
+        .container1 .s2 {
+            flex-basis: 30%;
+        }
+
+        .s1 {
+            margin-left: 5%;
+        }
+
+        .s1 img {
+            width: 90%;
+            height: 80%;
+        }
+
+        .s2 p {
+            line-height: 2;
+        }
+
+        .s2 h1 {
+            font-size: 2em;
+            text-align: center;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
         }
         .container2{
-            width:40vw;
-        }
-        .container1 img{
+            display: flex;
 
-            flex-basis: 80%;
         }
+        .container2>.s3{
+            flex-basis: 50%;
+            margin-left: 10%;
+
+        }
+        .s3 p{
+            line-height: 2;
+            padding:10px;
+            margin:10px;
+            
+        }
+        .s3 h2{
+            
+            margin:30px;
+            
+        }
+        .sec3 {
+            text-align: center;
+        }
+
+        .sec3 h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .sec3 p {
+            line-height: 1.8;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="text"]:focus,
+        form input[type="number"]:focus,
+        form input[type="date"]:focus {
+            border-color: #333;
+            outline: none;
+        }
+
+        form label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        hr {
+            width: 50%;
+            margin: 20px auto;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
         
     </style>
-
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Gourmet au Catering</h1>
+        <nav>
+            <a href="#sec1">About</a>
+            <a href="#sec2">Menu</a>
+            <a href="#sec3">Contact</a>
+        </nav>
     </header>
-    <div class="main-Container">
-        <div class="container1">
-            <img src="tablesetting2.jpg" alt="">
-        </div>
-        <div class="container2">
-            <h1>About Catering</h1>
-            <h6>Tradition since 1889</h6>
-            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
+    <section class="main-page">
+        <h2>Le Catering</h2>
+        
+        
 
-    </div>
+    </section>
     
+
+    <section class="sec1" id="sec1">
+        <div class="container1">
+            <div class="s1">
+                <img src="tablesetting2.jpg" alt="">
+            </div>
+            <div class="s2">
+                <h1>About Catering</h1>
+                <p>Tradition since 1889</p>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec2" id="sec2">
+        <div class="container2">
+            <div class="s3">
+                <h2>Our Menu</h2>
+                <h4>Bread Basket</h4>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                <h4>Honey Almond Granola with Fruits</h4>
+                <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <h4>Belgian Waffle</h4>
+                <p>Vanilla flavored batter with malted flour 7.50</p>
+                <h4>Scrambled eggs</h4>
+                <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                <h4>Blueberry Pancakes</h4>
+                <p>With syrup, butter and lots of berries 8.50</p>
+
+
+            </div>
+            <div>
+                <img src="tablesetting (1).jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sec3" id="sec3">
+        <div>
+            <h1>Contact</h1>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggest criteria of them all, both look and taste.</p>
+            <p>Do not hesitate to contact us.</p>
+            <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="number">How many People</label>
+                <input type="number" id="number" name="number">
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+
+                <label for="message">Message / Special requirements</label>
+                <input type="text" id="message" name="message">
+
+                <button type="submit">SEND MESSAGE</button>
+                <hr>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
