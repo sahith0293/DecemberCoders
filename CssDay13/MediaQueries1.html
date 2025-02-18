@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            padding: 10px 0;
+            width: 80%;
+            margin: auto;
+            margin-bottom:20px;
+        }
+
+        .section1 {
+            display: grid;
+            width: 80%;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .container2{
+            margin:40px 0px;
+            display:flex;
+            justify-content: center;
+            gap:5px;
+            
+        }
+        .childcontainer{
+            font-size: 2em;
+        }
+        .childcontainer:hover{
+            background-color: black;
+            color: white;
+        }
+        .container3{
+            text-align: center;
+            width:80%;
+            margin:auto;
+            margin-bottom:60px;
+        }
+        .container3 img{
+            width:40%;
+            margin:auto;
+        }
+        hr{
+            width:70%;
+        }
+        .container4{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            margin:5px 15px;
+
+        }
+        .child2 .c1{
+            display:flex;
+            width:25%;
+            gap:10px;
+            align-items: center;
+            
+        }
+        .child2 span{
+            display:inline-block;
+            padding:5px;
+            margin-right:3px;
+            margin-top:5px;
+            background-color: silver;
+        }
+        @media screen and (max-width:576px){
+            .child1{
+                grid-area: c1;
+                background-color: aqua;
+            }
+            .child2{
+                grid-area: c2;
+                background-color: aquamarine;
+            }
+            .child3{
+                grid-area: c3;
+                background-color: antiquewhite;
+            }
+            .child4{
+                grid-area: c4;
+                background-color: bisque;
+            }
+            .child5{
+                grid-area:c5;
+                background-color: brown;
+            }
+            .child6{
+                grid-area:c6;
+                background-color: burlywood;
+            }
+            .child7{
+                grid-area:c7;
+                background-color: cadetblue;
+            }
+            .child8{
+                grid-area: c8;
+                background-color: chartreuse;
+            }
+            .container{
+                grid-template-areas: 
+
+                "c1 c2"
+                "c3 c4"
+                "c5 c6"
+                "c7 c7 "
+                "c8  c8";
+               
+            }
+            .container2{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            .container4{
+                display:grid;
+                grid-template-columns: 2fr 2fr 1fr;
+            }
+            @media screen and (max-width: 768px) {
+                
+                nav {
+                    grid-template-columns: auto auto;
+                    text-align: center;
+                }
+                
+               
+                .section1 .container {
+                    grid-template-columns: 1fr 1fr;
+                }
+            
+                
+                .container2 {
+                    justify-content: center;
+                }
+            
+                .container2 .childcontainer {
+                    font-size: 1.5em;
+                }
+            
+
+                .container3 h1 {
+                    font-size: 2em;
+                }
+            
+                .container3 img {
+                    width: 50%;
+                }
+            
+                
+                .container4 {
+                    grid-template-columns: 1fr 1fr;
+                }
+            
+                .container4 .child2 {
+                    width: 100%;
+                }
+            }
+            
+            @media screen and (max-width: 576px) {
+                
+                nav {
+                    grid-template-columns: 1fr;
+                }
+            
+                
+                .section1 .container {
+                    grid-template-columns: 1fr;
+                }
+            
+                
+                .container2 {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                
+                .container3 h1 {
+                    font-size: 1.5em;
+                }
+            
+                .container3 img {
+                    width: 80%;
+                }
+            
+                .container4 {
+                    grid-template-columns: 1fr;
+                }
+            
+                .container4 .child2 {
+                    width: 100%;
+                }
+            }
+            
+
+            
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div><i class="fa-solid fa-bars"></i></div>
+        <div>My Food</div>
+        <div>Mail</div>
+    </nav>
+
+    <div class="section1">
+        <div class="container">
+            <div class="child1">
+                <img src="sandwich.jpg" alt="">
+                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child2">
+                <img src="steak.jpg" alt="">
+                <h3>Let Me Tell You About This Steak</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child3">
+                <img src="cherries.jpg" alt="">
+                <h3>Cherries, interrupted</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child4">
+                <img src="wine.jpg" alt="">
+                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child5">
+                <img src="popsicle.jpg" alt="">
+                <h3>All I Need Is a Popsicle</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child6">
+                <img src="salmon.jpg" alt="">
+                <h3>Salmon For Your Skin</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child7">
+                <img src="sandwich (1).jpg" alt="">
+                <h3>The Perfect Sandwich, A Real Classic</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="child8">
+                <img src="croissant.jpg" alt="">
+                <h3>Le French</h3>
+                <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="childcontainer">&laquo;</div>
+        
+        <div class="childcontainer">1</div>
+        <div class="childcontainer">2</div>
+        <div class="childcontainer">3</div>
+        <div class="childcontainer">4</div>
+        <div class="childcontainer">&raquo;</div>
+    </div>
+    <div class="container3">
+        <h1>About Me, The Food Man</h1>
+        <img src="chef.jpg" alt="">
+        <h1>
+            <b>I am Who I Am!</b>
+            
+        </h1>
+        <p>With Passion For Real, Good Food</p>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div><hr>
+    <div class="container4">
+        <div class="child2">
+        <h4>FOOTER</h4>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Powered by <span>w3.css</span></p>
+    </div>
+        <div class="child2">
+            <h4>BLOG POSTS</h4>
+            <div class="child2 c1">
+                <div>
+                    <img src="workshop.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem</p>
+                    <p>Sed mattis nunc</p>
+                </div>
+                
+
+            </div><br><hr>
+            <div class="child2 c1">
+                <div>
+                    <img src="gondol.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem</p>
+                    <p>Sed mattis nunc</p>  
+                </div>
+            </div>
+        </div>
+        <div class="child2">
+            <h4>Popular Tags</h4>
+            <span>Travel</span><span>New York</span><span>Salmon</span><span>France</span><span>Drinks</span><span>Ideas</span><span>Flavors</span><span>Cuisine</span><span>Chicken</span><span>Dressing</span><span>Fried</span><span>Fish</span><span>Duck</span>
+
+        </div>
+        
+    </div>
+    
+
+
+</body>
+</html>
