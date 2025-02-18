@@ -42,7 +42,53 @@
             height: auto;
             display: block;
         }
-        
+        .container2{
+            margin:40px 0px;
+            display:flex;
+            justify-content: center;
+            gap:5px;
+            
+        }
+        .childcontainer{
+            font-size: 2em;
+        }
+        .childcontainer:hover{
+            background-color: black;
+            color: white;
+        }
+        .container3{
+            text-align: center;
+            width:80%;
+            margin:auto;
+            margin-bottom:60px;
+        }
+        .container3 img{
+            width:40%;
+            margin:auto;
+        }
+        hr{
+            width:70%;
+        }
+        .container4{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            margin:5px 15px;
+
+        }
+        .child2 .c1{
+            display:flex;
+            width:25%;
+            gap:10px;
+            align-items: center;
+            
+        }
+        .child2 span{
+            display:inline-block;
+            padding:5px;
+            margin-right:3px;
+            margin-top:5px;
+            background-color: silver;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -98,6 +144,63 @@
             </div>
         </div>
     </div>
+    <div class="container2">
+        <div class="childcontainer">&laquo;</div>
+        
+        <div class="childcontainer">1</div>
+        <div class="childcontainer">2</div>
+        <div class="childcontainer">3</div>
+        <div class="childcontainer">4</div>
+        <div class="childcontainer">&raquo;</div>
+    </div>
+    <div class="container3">
+        <h1>About Me, The Food Man</h1>
+        <img src="chef.jpg" alt="">
+        <h1>
+            <b>I am Who I Am!</b>
+            
+        </h1>
+        <p>With Passion For Real, Good Food</p>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div><hr>
+    <div class="container4">
+        <div class="child2">
+        <h4>FOOTER</h4>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Powered by <span>w3.css</span></p>
+    </div>
+        <div class="child2">
+            <h4>BLOG POSTS</h4>
+            <div class="child2 c1">
+                <div>
+                    <img src="workshop.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem</p>
+                    <p>Sed mattis nunc</p>
+                </div>
+                
+
+            </div><br><hr>
+            <div class="child2 c1">
+                <div>
+                    <img src="gondol.jpg" alt="">
+                </div>
+                <div>
+                    <p>Lorem</p>
+                    <p>Sed mattis nunc</p>  
+                </div>
+            </div>
+        </div>
+        <div class="child2">
+            <h4>Popular Tags</h4>
+            <span>Travel</span><span>New York</span><span>Salmon</span><span>France</span><span>Drinks</span><span>Ideas</span><span>Flavors</span><span>Cuisine</span><span>Chicken</span><span>Dressing</span><span>Fried</span><span>Fish</span><span>Duck</span>
+
+        </div>
+        
+    </div>
+    
+
 
 </body>
 </html>
