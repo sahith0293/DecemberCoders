@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Images</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        img {
+            margin-top: 20px;
+            width: 300px;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Click a button to see the technology image</h2>
+
+    <button onclick="changeImage('html')">HTML</button>
+    <button onclick="changeImage('css')">CSS</button>
+    <button onclick="changeImage('js')">JavaScript</button>
+    <button onclick="changeImage('react')">React</button>
+
+    <br>
+    <img id="techImage" src="" alt="Technology Image">
+
+    <script>
+        function changeImage(tech) {
+            let imagePath = {
+                'html': 'html_image.jpeg',  
+                'css': 'css_image.jpeg',
+                'js': 'javascript_image.jpeg',
+                'react': 'react_image.jpeg'
+            };
+
+            document.getElementById('techImage').src = imagePath[tech];
+        }
+    </script>
+
+</body>
+</html>
+

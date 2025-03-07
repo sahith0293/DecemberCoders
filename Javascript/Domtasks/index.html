@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+</head>
+<body>
+
+    <h2>1) Change Background Color</h2>
+    <div id="myElement">Click the button to change my background</div>
+    <button onclick="changeBackground()">Change Background</button>
+
+    <h2>2) Select Elements by Class</h2>
+    <p class="myClass">First paragraph</p>
+    <p class="myClass">Second paragraph</p>
+    <button onclick="logClassElements()">Log Elements</button>
+
+    <h2>3) Change Text Content</h2>
+    <p id="textElement">Old text</p>
+    <button onclick="changeText()">Change Text</button>
+
+    <h2>4) Create and Append Element</h2>
+    <div id="container">
+        <h3>Paragraphs:</h3>
+    </div>
+    <button onclick="addParagraph()">Add Paragraph</button>
+
+    <h2>5) Remove an Element</h2>
+    <p id="removeMe">Click button to remove me</p>
+    <button onclick="removeElement()">Remove Element</button>
+
+    <h2>6) Style an Element</h2>
+    <p id="styleMe">Style this text</p>
+    <button onclick="styleElement()">Apply Style</button>
+
+    <!-- Link the JavaScript file -->
+    <script src="index.js"></script>
+
+</body>
+</html>

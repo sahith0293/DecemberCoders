@@ -4,62 +4,390 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Yoga Classes</title>
-    <link rel="icon" href="assets/YOGLOVE.jpg" style = "background-color:none;">
+    <link rel="icon" href="assets/YOGLOVE.jpg">
     <style>
-        header{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
         }
-        navbar{
-            display: flex;
-            justify-content: space-between;
-            gap:5%;
-            align-items: center;
+        h1{
+            margin-bottom: 1%;
+            padding: 2%;
+            text-decoration: underline;
+            
+            text-decoration-color:palevioletred;
+            text-underline-offset: 20px; 
+            text-decoration-thickness: 1px;
+            color:rgb(64,57,96);
+        }
+        :root {
+            --prime: ; 
+          }
+        
+
+        body {
+            font-family: Arial, sans-serif;
         }
 
-        .sec1{
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2vh 5vw; 
+        }
+
+        
+        header img {
+            width: 10%; 
+            max-width: 120px; 
+            height: auto;
+        }
+
+        
+        nav {
+            display: flex;
+            gap: 2vw; 
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.2rem; 
+            color: black;
+        }
+
+        
+        .sec1 {
             background-image: url("assets/section1img.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh;
+            height: 100vh; 
+            position: relative;
+            display: flex;
+           
+            
+            
         }
-        .sec1{
-            position:relative;
-        }
-        .sec1 s1{
+
+        
+        .s1 {
+            width: 40vw; 
+            padding: 1rem;
+            background-color: white;
+            color: black;
+            font-size: 2.0rem;
+            font-weight: bold;
+            border-radius: 1rem;
+            border: 1.5vw solid rgba(225, 225, 35, 0.951);
             position: absolute;
+            bottom:20%;
+            right:10%;
+           
+            text-align: center;
+            
+        }
+
+        .s1 p {
+            line-height: 1.2;
+            color: rgb(64,57,96);
+            
+        }
+        
+
+        
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            border: none;
+            background-color: palevioletred;
+            cursor: pointer;
+            color:white;
+            border-radius: 0.5rem;
+            
+        }
+        .dropdown-container{
+            position: relative;
+
 
         }
+        .dropdown-content {
+            display: none;
+            color:green;
+            background-color: yellowgreen;
+            width:250%;
+            text-align: center;
+            line-height: 2.0;
+            border-radius: 10px;
+            padding:15%;
+        }
+        .dropdown-item{
+            background-color: azure;
+            width:90%;
+            border-radius: 5px;
+            margin:5%;
+            font-size: 1rem;
+        }
+        #dropdown-toggle:hover  ~ .dropdown-content{
+            display:block;
+            position:absolute;
+            top:30px;
+            z-index: 1000;
+
+        }
+        
+        .sec2-container{
+            display: flex;
+            text-align: center;
+            font-size: 1.5em;
+            margin: auto auto;
+            align-content: center;
+            height:50vh;
+            
+        }
+        .sec2-childs{
+            line-height: 1.5;
+           
+        }        
+        .sec2-childs:nth-child(even){
+            h1{
+                margin-bottom: 1%;
+                padding: 2%;
+                text-decoration: underline;
+                
+                text-decoration-color:palevioletred;
+                text-underline-offset: 20px; 
+                text-decoration-thickness: 1px;
+                color: white;
+            }
+            p{
+                padding:2%;
+                font-size:1.3rem;
+                color:white;
+                width:60%;
+                text-align: center;
+                margin: auto auto;
+            }
+            
+            flex-basis: 25%;
+            
+            background-color:indigo;
+        }
+        .sec2-childs:nth-child(odd){
+            h1{
+                margin-bottom: 1%;
+                padding: 2%;
+                text-decoration: underline;
+                
+                text-decoration-color:palevioletred;
+                text-underline-offset: 20px; 
+                text-decoration-thickness: 1px;
+                color:rgb(64,57,96);
+            }
+            p{
+                padding:2%;
+                font-size: 1.3rem;
+                color: rgb(159, 159, 11);
+                width:70%;
+                margin:auto auto
+            }
+            
+            flex-basis:25%;
+            background-color:#FDF5C9;
+        }
+        .sec2-childs button{
+            margin-top: 4%;
+            background-color: palevioletred;
+            border-radius: 10px;
+            color:white;
+            font-size: 0.5em;
+            width:35%;
+            
+        }
+       .sec3-container{
+        display: flex;
+        align-items: center;
+        gap:6%;
+        margin-right: 10%;;
+
+       }
+       .sec3content{
+        flex-basis:80%;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        color:rgb(71, 105, 4)
+       }
+       .sec3img img{
+        width:100%;
+       }
+       .sec3content h1{
+        font-size: 2em;
+        color:rgb(64,57,96);
+       }
+       .sec3content h1,p,button{
+        margin:2%;
+       }
+       #event1{
+        grid-area: event1;
+       }
+       #event2{
+        grid-area: event2;
+       }
+       #event3{
+        grid-area: event3;
+       }
+       #event1{
+        grid-area: course1;
+       }
+       #event1{
+        grid-area: course2;
+       }
+       .s4{
+        display: grid;
+        grid-template-areas: 
+        "event1 event2 event3"
+        "course1 course2";
+       }
+         
+    
+    
+      
+
+        
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/YOGLOVE.jpg" alt="">
+        <img src="assets/navbarimage.jpeg" alt="Logo">
+        <nav>
+            <a href="#">About</a>
+            <div class="dropdown-container">
+                <a href="#" id="dropdown-toggle">Academy</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-item">200 Hour TTC</div>
+                    <div class="dropdown-item">Yin Yoga TTC</div>
+                    <div class="dropdown-item">Pranayama Coach Course</div>
+                    <div class="dropdown-item">Kids Yoga TTC</div>
+                </div>
 
-        <navbar>
-            <nav>About</nav>
-            <nav>Academy</nav>
-            <nav>Studio</nav>
-            <nav>Yoga Retreats</nav>
-            <nav>Home With Ira</nav>
-            <nav>Contact us</nav>Studio
-        </navbar>
+            </div>
+            
+            <a href="#">Studio</a>
+            <div class="dropdown-container">
+                <a href="#" id ="dropdown-toggle">Yoga Retreats</a>
+                <div class="dropdown-content">
+                    <div class="dropdown-item">Kerala Retreat</div>
+                    <div class="dropdown-item">Andaman Retreat</div>
+                    <div class="dropdown-item">Rishikesh Retreat</div>
+                    <div class="dropdown-item">Govardhan Retreat</div>
+                    <div class="dropdown-item">Bhutan Retreat</div>
+                    <div class="dropdown-item">Ladakh Retreat</div>
+                    <div class="dropdown-item">Bali Retreat</div>
+                </div>
+
+
+            </div>
+            <a href="#">Home With Ira</a>
+            <a href="#">Contact us</a>
+        </nav>
     </header>
+    
+
     <div class="sec1">
         <div class="s1">
-            <p>Practice yoga with Ira Trivedi
-                Teacher Training 
-                Yoga Retreats 
+            <p>Practice yoga with Ira Trivedi <br>
+                Teacher Training <br>
+                Yoga Retreats <br>
                 On Demand Classes</p>
             <button>Member's Portal</button>
+        </div>
+    </div>
+    <div class="sec2">
+        <div class="sec2-container">
+            <div class="sec2-childs">
+                <h1>Yoga Academy</h1>
+                <p>Certified teacher training programs and courses guided by Ira Trivedi.</p>
+                <button>More info</button>
+            </div>
+            <div class="sec2-childs">
+                <h1 >Retreats</h1>
+                <p>Yoga retreats with Ira Trivedi in India’s most exquisite locations.</p>
+                <button>More info</button>
+            </div>
+            <div class="sec2-childs">
+                <h1>Our Mumbai Studio</h1>
+                <p>Our beautiful, state-of-the-art sea-side studio offers events and workshops with Ira Trivedi.</p>
+                <button>More info</button>
+            </div>
+            <div class="sec2-childs">
+                <h1>Pre-recorded Classes</h1>
+                <p>Pre-recorded classes by Ira Trivedi and team.</p>
+                <button>More info</button>
+            </div>
+        </div>
+    </div>
+    <div class="sec3">
+        <div class="sec3-container">
+            <div class="sec3img"><img src="assets/sec3img.jpg" alt=""></div>
+            <div class="sec3content">
+                <h1>Our story</h1>
+                <p>Yoglove is dedicated to delivering comprehensive wellness services to individuals and companies worldwide. Our offerings encompass both online and offline yoga programming and education, all led by the esteemed Ira Trivedi, a prominent figure in the yoga and wellness community in India. Founded by Ira Trivedi, a best-selling author and Yoga Acharya, Yoglove is built on a foundation of extensive expertise and passion.</p>
+                <button>Read more</button>
+            </div>
+        </div>
+    </div>
+    <div class="sec4">
+        <div class="s4">
+            <h1>Upcoming Events</h1>
+            <div class="s4item" id ="event1">
+                <img src="assets/sec4img1.webp" alt="">
+                <p>Yin Yoga + Breathwork with</p>
+                <p>Crystal Bowls</p>
+                <p>Sun,02 Mar| Mumbai </p>
+
+                <a href="">More info</a>
+                <button>Know More</button>
+            </div>
+            <div class="s4item" id ="event2">
+                <img src="assets/sec4img2.webp" alt="">
+                <p>Govardhan Eco Village Yoga Retreat</p>
+                <p>Fri, 14 Mar | Govardhan Eco Village</p>
+
+                <a href="">More info</a>
+                <button>Know More</button>
+            </div>
+            <div class="s4item" id ="event3">
+                <img src="assets/sec4img3.webp" alt="">
+                <p>Bali Yoga Retreat with Ira Trivedi</p>
+                <p>Tue,01 Jul | Bali</p>
+
+
+                <a href="">More info</a>
+                <button>Know More</button>
+
+            </div>
+            <h1 id="title">Teacher Training Courses</h1>
+            <div class="s4item" id ="course1">
+                <img src="assets/sec4img4.webp" alt="">
+                <p>Yin Yoga Teacher Training Course</p>
+                <p>Sat,01 Mar | Yog Love Studio</p>
+                <a href="">More info</a>
+                <button>Know More</button>
+            </div>
+            <div class="s4item" id ="course2">
+                <img src="assets/sec4img5.webp" alt="">
+                <p>200 Hour Teacher Training Course</p>
+                <p>Sun,09 Mar | Online on Zoom</p>
+                <a href="">More info</a>
+                <button>Know More</button>
+            </div>
+
 
         </div>
-        
     </div>
-
-    
-    
     
 </body>
 </html>
+def checkprime(num):
