@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +62,7 @@
 
         
         .sec1 {
-            background-image: url("assets/section1img.jpg");
+            background-image: url("./assets/section1img.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh; 
@@ -130,13 +131,14 @@
             margin:5%;
             font-size: 1rem;
         }
-        #dropdown-toggle:hover  ~ .dropdown-content{
-            display:block;
-            position:absolute;
-            top:30px;
+        .dropdown-toggle:hover + .dropdown-content,
+        .dropdown-container:hover .dropdown-content {
+            display: block;
+            position: absolute;
+            top: 30px;
             z-index: 1000;
-
         }
+
         
         .sec2-container{
             display: flex;
@@ -145,6 +147,7 @@
             margin: auto auto;
             align-content: center;
             height:50vh;
+            width: 100%;
             
         }
         .sec2-childs{
@@ -210,7 +213,9 @@
         display: flex;
         align-items: center;
         gap:6%;
-        margin-right: 10%;;
+        margin-right: 10%;
+        height:auto;
+        width: 100%;
 
        }
        .sec3content{
@@ -229,28 +234,102 @@
        .sec3content h1,p,button{
         margin:2%;
        }
-       #event1{
-        grid-area: event1;
+
+    .sec4 {
+            text-align: center;
+            padding: 2%;
+            width:100%;
+            height: auto;
+        }
+
+        .s4 {
+            display: grid;
+            grid-template-areas:
+                "title1 title1"
+                "event1 event2"
+                "event3 event3"
+                "title title"
+                "course1 course2";
+            gap: 2%;
+            
+        }
+
+        .s4item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           
+        }
+        #title1{
+            grid-area: title1;
+            margin-top: 2rem;
+        }
+
+
+        #event1 {
+            grid-area: event1;
+        }
+
+        #event2 {
+            grid-area: event2;
+        }
+
+        #event3 {
+            grid-area: event3;
+            justify-self: center;
+        }
+
+        #title {
+            grid-area: title;
+            margin-top: 2rem;
+        }
+
+        #course1 {
+            grid-area: course1;
+            margin-top: 1rem;
+        }
+
+        #course2 {
+            grid-area: course2;
+            margin-top: 1rem;
+        }  
+        .s4item img{
+            width:100%;
+        }
+        .sec5{
+            margin-top: 20%;
+            width:100%;
+           height: auto;
+        }
+        
+       .s5{
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              gap: 2%;
+              padding: 2%;
+              background-color: #f9f9f9;
+              color:rgb(64,57,96);
+              font-size: 1.5rem;
+              font-weight: bold;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
        }
-       #event2{
-        grid-area: event2;
+       .s5 a{
+           text-decoration: none;
+           color:rgb(64,57,96);
        }
-       #event3{
-        grid-area: event3;
-       }
-       #event1{
-        grid-area: course1;
-       }
-       #event1{
-        grid-area: course2;
-       }
-       .s4{
-        display: grid;
-        grid-template-areas: 
-        "event1 event2 event3"
-        "course1 course2";
-       }
-         
+
+       
+    
+    
+    
+       
+       
+    
+    
+       
     
     
       
@@ -276,7 +355,7 @@
             
             <a href="#">Studio</a>
             <div class="dropdown-container">
-                <a href="#" id ="dropdown-toggle">Yoga Retreats</a>
+                <a href="#" class ="dropdown-toggle">Yoga Retreats</a>
                 <div class="dropdown-content">
                     <div class="dropdown-item">Kerala Retreat</div>
                     <div class="dropdown-item">Andaman Retreat</div>
@@ -293,9 +372,9 @@
             <a href="#">Contact us</a>
         </nav>
     </header>
-    
 
-    <div class="sec1">
+    
+    <section class="sec1">
         <div class="s1">
             <p>Practice yoga with Ira Trivedi <br>
                 Teacher Training <br>
@@ -303,8 +382,10 @@
                 On Demand Classes</p>
             <button>Member's Portal</button>
         </div>
-    </div>
-    <div class="sec2">
+    </section>
+    
+    
+    <section class="sec2">
         <div class="sec2-container">
             <div class="sec2-childs">
                 <h1>Yoga Academy</h1>
@@ -327,8 +408,13 @@
                 <button>More info</button>
             </div>
         </div>
-    </div>
-    <div class="sec3">
+    </section>
+
+    
+
+    
+    
+    <section class="sec3">
         <div class="sec3-container">
             <div class="sec3img"><img src="assets/sec3img.jpg" alt=""></div>
             <div class="sec3content">
@@ -337,10 +423,10 @@
                 <button>Read more</button>
             </div>
         </div>
-    </div>
-    <div class="sec4">
+    </section>
+    <section class="sec4">
         <div class="s4">
-            <h1>Upcoming Events</h1>
+            <h1 id ="title1">Upcoming Events</h1>
             <div class="s4item" id ="event1">
                 <img src="assets/sec4img1.webp" alt="">
                 <p>Yin Yoga + Breathwork with</p>
@@ -386,8 +472,24 @@
 
 
         </div>
-    </div>
+    </section>
+    <section class="sec5">
+        <h1 style="text-align: center; font-size: 3rem;">Media Links</h1>
+        <div class="s5">
+           
+            <div><a href="https://www.thequint.com/fit/indias-biggest-virtual-wellness-festival-yoga-ayurveda-fitness-nutrition-may-2-and-3">the quint</a></div>
+            <div><a href="https://www.mid-day.com/celebrity-life/well-being/article/international-yoga-day-2024-teaching-yoga-in-its-true-essence-is-my-svadharma-my-life-purpose-says-ira-trivedi-23355268">mid-day</a></div>
+            <div><a href="https://indianexpress.com/article/lifestyle/fitness/need-fitness-motivation-in-lockdown-yoga-guru-ira-trivedi-has-important-tips-6408440/">The Indian expressJournalism of courage</a></div>
+            <div><a href="https://www.indulgexpress.com/life-style/2020/Apr/23/indulge-timepass-yoga-guru-ira-trivedi-shares-a-dummys-guide-for-quarantine-wellness-24319.html">Indian Express INDL</a></div>
+            
+          
+            
+        </div>
+        
+
+    </section>
+    
     
 </body>
 </html>
-def checkprime(num):
+
